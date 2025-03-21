@@ -14,19 +14,33 @@
 body {
 font-family: Arial, sans-serif;
 color: #333;
+min-height: 100dvh;
+display: flex;
+min-height: 100dvh;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+flex-direction: column;
+font-size: calc(1rem + 0.5vw);
 }
 .topper {
-
 position: sticky;
 top: 0;
 z-index: 1000;
 background-color: #887d7d;
 margin: 0;
+width: 100%;
+}
+.hero {
+  background-color: #4d99eb;
+  text-align: center;
+  margin-top: 0;
 }
 #options{
 font-size: large;
 font-weight: 700;
 color: #a75304;
+padding: 10px;
 }
 #Title {
 text-align: center;
@@ -34,7 +48,9 @@ margin-right: 10px;
 color: rgb(12, 241, 165);
 font-family: Time New Roman;
 font-size: 420%;
-
+}
+.about{
+  width: 100%;
 }
 .heading {
 color: rgb(216, 22, 151);
@@ -120,7 +136,7 @@ font-size: large;
 #welcome {
 color: blueviolet;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 360%;
+font-size: 100%;
 }
 .hcenter{
 color: blue;
@@ -129,67 +145,60 @@ text-align: center;
 border: #68aff5 solid;
 border-width: 1px;
 border-radius: 20px;
-width: 1839px;
+width: 100%;
 text-align: center;
-margin-left: 30px;
 background-color: rgb(195, 248, 4);
 }
 .hcenter:hover {
 background-color: rgb(94, 84, 45);
 }
-#services_intro {
+#services_intro {                                      /* services */
 color: rgb(16, 16, 102);
 width: 100%;
 text-align: center;
 background-color: #e6e1e1;
-padding-bottom: 1.5px;
 }
-.container{
-display: flex;
-margin-left: 0;
+.container{                                   /* services */
+display:flex;
+width: 100vh;
+gap: 20px;
+flex: 1;
+padding: 20px;
+justify-content: left;
 }
-.card {
-width: 300px;
+.card { 
+width: 350px;                                    /* services */
 background: white;
 padding: 20px;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 text-align: center;
-margin: 30px;
 flex-shrink: 0;
-margin-left: 40px;
 }
-
-.card img {
-width: 100%;
-border-radius: 10px;
-}
-
-.card h3 {
-margin: 10px 0;
+.card h3 {                                  /* services */
+margin: 0;
 color: #351d02;
 font-weight: 900;
 }
 
-.card p {
+.card p {                                       /* services */
 color: #24380d;
 font-family: Times New Roman;
 }
 
-.card button {
+.card button {                                     /* services */
 background: #007bff;
 color: white;
 border: none;
 padding: 10px 15px;
-margin-bottom: 0px;
 cursor: pointer;
 border-radius: 10px;
 }
 
-.card button:hover {
+.card button:hover {                                     /* services */
 background: #aa1696;
 }
-#check_in{
+#check_in{                                                /* contact */
 text-align: left;
 color: rgb(22, 85, 50);
 font-size: 30px;
@@ -199,16 +208,16 @@ transition: transform 0.5s ease-in-out;
 position: relative;
 left: 0;
 }
-#check_in:hover {
+#check_in:hover {                                             /* contact */
 color: blue;
 transform: translateX(300px);
 }
-#contact{
+#contact{                                                           /* contact */
 font-family: sans-serif;
-padding-left: 30px;
+padding-left: 0px;
 color: rgb(52, 26, 77);
 }
-.submit{
+.submit{                                                  /* contact */
 background-color: cadetblue;
 font-family: Segoe UI;
 translate: 100px;
@@ -216,18 +225,23 @@ border-radius: 20px;
 margin-bottom: 14px;
 color: rgb(36, 4, 66);
 }
-.submit:hover {
+.submit:hover {                                             /* contact */
 background-color: rgb(238, 118, 63);
 }
 .footer {
 text-align: center;
 background-color: #2e2b2b;
 color: rgb(245, 61, 61);
+padding: 20px;
+width: 100%;
+box-sizing: border-box;
+margin-top: auto;
 font-size: large;
-margin-bottom: 17px;
+margin-bottom: 0;
+flex-shrink: 0;
 }
 #copyright {
 color: aliceblue;
 text-align: left;
-margin: 10px,10px,0,0;
+margin-bottom: 0;
 }
