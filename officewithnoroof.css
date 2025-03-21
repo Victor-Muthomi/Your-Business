@@ -1,0 +1,233 @@
+/* Define the keyframes 
+@keyframes slideIn {
+    from {
+    transform: translateX(-100%);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+    */
+/* Global Styles */
+body {
+font-family: Arial, sans-serif;
+color: #333;
+}
+.topper {
+
+position: sticky;
+top: 0;
+z-index: 1000;
+background-color: #887d7d;
+margin: 0;
+}
+#options{
+font-size: large;
+font-weight: 700;
+color: #a75304;
+}
+#Title {
+text-align: center;
+margin-right: 10px;
+color: rgb(12, 241, 165);
+font-family: Time New Roman;
+font-size: 420%;
+
+}
+.heading {
+color: rgb(216, 22, 151);
+font-size: 40px;
+font-weight: bold;
+font-family: Times New Roman;
+translate: 100px;
+}
+.vast {
+text-align: center;
+}
+/* Footer */
+footer {
+background-color: #689ed4;
+}
+footer a {
+color: #f8f9fa;
+margin: 0 10px;
+}
+.whatsapp-icon {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+margin-right: 10px;
+}
+.linkedin-icon {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+margin-right: 30px;
+}
+.telegram-icon{
+width: 45px;
+height: 45px;
+border-radius: 50%;
+margin-right: 30px;
+}
+.tiktok-icon {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+margin-right: 1px;
+}
+.feedback {
+background-color: rgb(241, 200, 146);
+text-align: center;
+padding: 10px;
+}
+.poster{
+width: 500px;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(77, 27, 27, 0.2);
+text-align: center;
+margin: 30px;
+flex-shrink: 0;
+margin-left: 40px;
+}
+#A{
+margin-left: 50px;
+}
+#B{
+margin-left: 460px;
+}
+#C{
+margin-left: 900px;
+}
+#D{
+margin-left: 1300px;
+}
+.poster h1{
+margin: 10px 0;
+color: #d37d1aee;
+font-weight: 900;
+font-family: cursive;
+}
+.poster p {
+color: #24380d;
+font-family: Times New Roman;
+font-size: large;
+}
+#welcome {
+color: blueviolet;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 360%;
+}
+.hcenter{
+color: blue;
+font-family: cursive;
+text-align: center;
+border: #68aff5 solid;
+border-width: 1px;
+border-radius: 20px;
+width: 1839px;
+text-align: center;
+margin-left: 30px;
+background-color: rgb(195, 248, 4);
+}
+.hcenter:hover {
+background-color: rgb(94, 84, 45);
+}
+#services_intro {
+color: rgb(16, 16, 102);
+width: 100%;
+text-align: center;
+background-color: #e6e1e1;
+padding-bottom: 1.5px;
+}
+.container{
+display: flex;
+margin-left: 0;
+}
+.card {
+width: 300px;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+text-align: center;
+margin: 30px;
+flex-shrink: 0;
+margin-left: 40px;
+}
+
+.card img {
+width: 100%;
+border-radius: 10px;
+}
+
+.card h3 {
+margin: 10px 0;
+color: #351d02;
+font-weight: 900;
+}
+
+.card p {
+color: #24380d;
+font-family: Times New Roman;
+}
+
+.card button {
+background: #007bff;
+color: white;
+border: none;
+padding: 10px 15px;
+margin-bottom: 0px;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.card button:hover {
+background: #aa1696;
+}
+#check_in{
+text-align: left;
+color: rgb(22, 85, 50);
+font-size: 30px;
+font-family: cursive;
+transition: transform 0.5s ease-in-out;
+  /* Initial position */
+position: relative;
+left: 0;
+}
+#check_in:hover {
+color: blue;
+transform: translateX(300px);
+}
+#contact{
+font-family: sans-serif;
+padding-left: 30px;
+color: rgb(52, 26, 77);
+}
+.submit{
+background-color: cadetblue;
+font-family: Segoe UI;
+translate: 100px;
+border-radius: 20px;
+margin-bottom: 14px;
+color: rgb(36, 4, 66);
+}
+.submit:hover {
+background-color: rgb(238, 118, 63);
+}
+.footer {
+text-align: center;
+background-color: #2e2b2b;
+color: rgb(245, 61, 61);
+font-size: large;
+margin-bottom: 17px;
+}
+#copyright {
+color: aliceblue;
+text-align: left;
+margin: 10px,10px,0,0;
+}
