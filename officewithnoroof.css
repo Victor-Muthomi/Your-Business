@@ -31,6 +31,10 @@ background-color: #887d7d;
 margin: 0;
 width: 100%;
 }
+.navigate{
+  background-color: #425c2a;
+  width: 60px;
+}
 .hero {
   background-color: #4d99eb;
   text-align: center;
