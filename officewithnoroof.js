@@ -9,7 +9,7 @@ event.preventDefault();
 let form = document.getElementById("contact-form");
 
 let params = {
-    receiver: document.getElementById("receiver").value,
+    receiver: "officewithnoroof@gmail.com",
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     subject: document.getElementById("subject").value,
