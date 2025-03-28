@@ -4,9 +4,7 @@ font-family: Arial, sans-serif;
 color: #333;
 min-height: 100dvh;
 display: flex;
-min-height: 100dvh;
-margin: 0;
-padding: 0;
+width: 100%;
 box-sizing: border-box;
 flex-direction: column;
 font-size: calc(1rem + 0.5vw);
@@ -16,9 +14,8 @@ position: sticky;
 top: 0;
 z-index: 1000;
 background-color: #887d7d;
-margin: 0;
 width: 100%;
-height: 20px;
+height: 100px;
 }
 .tunnel{
   margin-left: 10%;
@@ -31,8 +28,7 @@ height: 20px;
 }
 .navigate{
   background-color: #425c2a;
-  width: 100px;
-  margin: 4px;
+  width: 120px;
   font-size: 350%;
   font-family: fantasy;
   border: #68aff5 solid;
@@ -41,8 +37,6 @@ height: 20px;
 .hero {
   background-color: #4d99eb;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0px;
 }
 #options{
 font-size: 30%;
@@ -50,6 +44,7 @@ font-weight: 900;
 color: #a75304;
 padding: 10px;
 opacity: 0.7;
+flex-direction: column;
 }
 #Title {
 text-align: center;
@@ -63,14 +58,6 @@ opacity: 0.7;
 }
 .vast {
 text-align: center;
-}
-/* Footer */
-footer {
-background-color: #689ed4;
-}
-footer a {
-color: #f8f9fa;
-margin: 0 10px;
 }
 .whatsapp-icon {
 width: 45px;
@@ -203,6 +190,7 @@ transform: translateX(300px);
 font-family: sans-serif;
 padding-left: 0px;
 color: rgb(52, 26, 77);
+width: 100%;
 }
 .submit{                                                  /* contact */
 background-color: cadetblue;
@@ -222,9 +210,7 @@ color: rgb(245, 61, 61);
 padding: 20px;
 width: 100%;
 box-sizing: border-box;
-margin-top: auto;
 font-size: large;
-margin-bottom: 0;
 flex-shrink: 0;
 }
 #copyright {
