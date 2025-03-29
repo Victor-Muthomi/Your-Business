@@ -13,11 +13,20 @@
         <div>
         <h1 id="Title"><big>Office with No Roof</big></h1>
         </div>
-        <div id="options">
-                <button class="navigate"><a href="index.html">Home</a></button>
-                <button class="navigate"><a href="about.html">About Us</a></button>
-                <button class="navigate"><a href="contact.html">Contact</a></button>
+
+        <div class="navbar">
+        <div class="menu">
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
         </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <!-- Hero Section -->
@@ -184,5 +193,19 @@
             </a>
             <p id="copyright">© 2025 Office With no Roof. All rights reserved.</p>
         </footer>
+        <script>
+            function toggleMenu() {
+                let mobileMenu = document.getElementById("mobileMenu");
+                mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+            }
+    
+            // Hide mobile menu when screen is resized above 768px
+            window.addEventListener("resize", function() {
+                let mobileMenu = document.getElementById("mobileMenu");
+                if (window.innerWidth > 768) {
+                    mobileMenu.style.display = "none"; // Hide the mobile menu when maximized
+                }
+            });
+        </script>
 </body>
 </html>

@@ -14,17 +14,26 @@
         <div>
         <h1 id="Title"><big>Office with No Roof</big></h1>
         </div>
-        <div id="options">
-                <button class="navigate"><a href="about.html">About Us</a></button>
-                <button class="navigate"><a href="services.html">Services</a></button>
-                <button class="navigate"><a href="contact.html">Contact</a></button>
+
+    <div class="navbar">
+        <div class="menu">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
         </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </div>
 <div class="hero">
     <p><big>Your creative business partner for innovative solutions</big></p>
 </div>
-<div>
-    <p class="intro">Let's innovate together. We're passionate about building cutting-edge software 
+<div class="intro">
+        Let's innovate together. We're passionate about building cutting-edge software 
         solutions that empower your business.<br> 
         Our name represents our commitment to breaking down traditional barriers and pushing the 
         boundaries of what's possible in software development.<br>
@@ -36,10 +45,17 @@
         from custom application development and seamless API integrations to robust 
         cloud infrastructure and data management.<br>
         Let's embark on a journey of innovation together, where your vision becomes our shared mission.
-        We're not just building code; we're building relationships and creating lasting impact.<br>
+        We're not just building code; we're building relationships and creating lasting impact.
         Let's discuss how we can leverage our expertise to transform your ideas 
-        into powerful, tangible results. <br><button> <a href="contact.html">Get in Touch</a> </button>
-        </p>
+        into powerful, tangible results.<br>
+        <div class="wasHere">
+        <button class="wasHere-contents"> Let me Know you were here </button>
+            <div class="wasHere-content">
+            <a href="contact.html">Email</a>
+            <a href="https://wa.me/+254712550618">WhatsApp</a>
+            <a href="https://t.me/Muthomi_Victor">Telegram</a>
+            </div>
+        </div>
 </div>
 <div class="feedback">
     <p id="check_in">Reach us through:></p>
@@ -60,5 +76,20 @@
     </a>
     <p id="copyright">© 2025 Office With no Roof. All rights reserved.</p>
 </footer>
+
+<script>
+    function toggleMenu() {
+        let mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    }
+
+    // Hide mobile menu when screen is resized above 768px
+    window.addEventListener("resize", function() {
+        let mobileMenu = document.getElementById("mobileMenu");
+        if (window.innerWidth > 768) {
+            mobileMenu.style.display = "none"; // Hide the mobile menu when maximized
+        }
+    });
+</script>
 </body>
 </html>
